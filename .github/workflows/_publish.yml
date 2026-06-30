@@ -20,15 +20,26 @@ jobs:
         steps:
             # Checkout the code from the repository
             - name: Checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v3
       
             - name: Set up Python
               uses: actions/setup-python@v5
               with:
                 python-version: '3.12'
 
-            - run: ls -a
-                
+            - name: Install Expat 2.5.0
+              run: |
+                sudo apt update
+                sudo apt install -y build-essential wget
+                wget https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.gz
+                tar -xzf expat-2.5.0.tar.gz
+                cd expat-2.5.0
+                ./configure
+                make
+                sudo make install
+                echo "/usr/local/lib" | sudo tee -a /etc/ld.so.conf.d/expat.conf
+                sudo ldconfig
+
             - name: Install and build Jupyter Book
               run: |
                 pip install -U jupyter-book==0.15.1
@@ -93,7 +104,7 @@ jobs:
 
 
     build_docker_image:
-        if: true
+        if: false
 
         runs-on: ubuntu-20.04
         permissions:
