@@ -10,8 +10,8 @@ only_build_toc_files: true
 ######################################################### Execution settings ###
 
 execute:
-  execute_notebooks: off
-  # execute_notebooks: force
+  #execute_notebooks: off
+  execute_notebooks: force
 
 ############################################################# Parse settings ###
 
@@ -40,7 +40,6 @@ latex:
 
 ############################################################# Launch settings ###
 
-repository:
 repository:
   url: https://github.com/alicepeyraut/gravity_modeling_paper_demos
   path_to_book: .
