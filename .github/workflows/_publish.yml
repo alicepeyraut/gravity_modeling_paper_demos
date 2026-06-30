@@ -93,7 +93,7 @@ jobs:
 
 
     build_docker_image:
-        if: false
+        if: true
 
         runs-on: ubuntu-20.04
         permissions:
