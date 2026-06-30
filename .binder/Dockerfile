@@ -1,10 +1,3 @@
-################################################################################
-###                                                                          ###
-### Created by Martin Genet                                                  ###
-###                                                                          ###
-### École Polytechnique, Palaiseau, France                                   ###
-###                                                                          ###
-################################################################################
 
 FROM ghcr.io/alicepeyraut/gravity_modeling_paper_demos:latest
 
