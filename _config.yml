@@ -5,6 +5,7 @@ title: Welcome to [Peyraut & Genet, 2024]'s demos!
 author: Alice Peyraut & Martin Genet
 logo: logo.png
 copyright: "2024"
+only_build_toc_files: true
 
 ######################################################### Execution settings ###
 
@@ -40,16 +41,17 @@ latex:
 ############################################################# Launch settings ###
 
 repository:
+repository:
   url: https://github.com/alicepeyraut/gravity_modeling_paper_demos
   path_to_book: .
-  branch: main
+  branch: master
+
 
 launch_buttons:
   notebook_interface: jupyterlab  # jupyterlab, classic
   binderhub_url: https://mybinder.org
   # colab_url: https://colab.research.google.com
   # jupyterhub_url: https://jupytercloud.idcs.polytechnique.fr/jupyter
-
 
   # sphinx:
   #   config:
