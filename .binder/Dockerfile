@@ -6,7 +6,7 @@
 ###                                                                          ###
 ################################################################################
 
-FROM ghcr.io/alicepeyraut/gravity_modeling_paper_demos_github:latest
+FROM ghcr.io/alicepeyraut/gravity_modeling_paper_demos:latest
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
