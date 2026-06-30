@@ -4,6 +4,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10535004.svg)](https://doi.org/10.5281/zenodo.10535004)
 
 
-Interactive demos can be found at [https://alicepeyraut.github.io/gravity_modeling_paper_demos_github](https://alicepeyraut.github.io/gravity_modeling_paper_demos_github).
+Interactive demos can be found at [https://alicepeyraut.github.io/gravity_modeling_paper_demos](https://alicepeyraut.github.io/gravity_modeling_paper_demos).
 
 (Main library can be found at [https://github.com/mgenet/dolfin_mech](https://github.com/mgenet/dolfin_mech).)
